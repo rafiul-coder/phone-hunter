@@ -7,8 +7,9 @@ const loadPhones = async () => {
 
 const displayphones = phones => {
     const phonesContainer = document.getElementById('phone-container');
-    phones.forEach(phone =>{
-        
+    phones.forEach(phone => {
+        const phoneDiv = document.createElement('div');
+        phoneDiv.classList.add('col');
     })
 }
 loadPhones();
