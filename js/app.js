@@ -8,6 +8,12 @@ const loadPhones = async (scarceText) => {
 const displayphones = phones => {
     const phonesContainer = document.getElementById('phone-container');
     phonesContainer.textContent = '';
+    // display 20 phones only
+    phones = phones.slice(0, 10);
+
+    //display no phones found
+
+    //display all phones
     phones.forEach(phone => {
         const phoneDiv = document.createElement('div');
         phoneDiv.classList.add('col');
