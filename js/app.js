@@ -38,10 +38,11 @@ const displayphones = (phones, datalimit) => {
                     <p class="card-text">
                     This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <button onclick"loadPhoneDetails('${phone.slug}')" href="#" class="btn btn-primary">Show Details</button>
+                  <button onclick"loadPhoneDetails('${phone.slug}')" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phoneDetailmodal">Show Details</button>
                 </div>
               </div>
         `;
+        // data-bs-toggle="modal" data-bs-target="phoneDetailmodal"
         phonesContainer.appendChild(phoneDiv);
     })
     //stop loder
